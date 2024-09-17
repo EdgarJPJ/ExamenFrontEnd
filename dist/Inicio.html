@@ -25,7 +25,8 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="Inicio.html"><img src="assets/images/logo/signofhealth_medical_10742.webp" alt="Logo" srcset="" style="width: 85px; height: auto;">SMP</a>
+                            <a href="Inicio.html"><img src="assets/images/logo/signofhealth_medical_10742.webp"
+                                    alt="Logo" srcset="" style="width: 85px; height: auto;">SMP</a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -38,15 +39,15 @@
                         <li class="sidebar-title">Menu</li>
                         <li class="sidebar-item active">
                             <a href="Inicio.html" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
+                                <i class="bi bi-house-door-fill"></i>
                                 <span>Inicio</span>
                             </a>
                         </li>
-                         <li class="sidebar-item"></li>
-                            <a href="index.html" class='sidebar-link'>
-                                <i class="bi bi-grid-fill"></i>
-                                <span>Registrar pacientes</span>
-                            </a>
+                        <li class="sidebar-item"></li>
+                        <a href="index.html" class='sidebar-link'>
+                            <i class="bi bi-ui-checks"></i>
+                            <span>Registrar pacientes</span>
+                        </a>
                         </li>
                         <li class="sidebar-item">
                             <a href="saludParaMexicanos.html" class='sidebar-link'>
@@ -54,7 +55,7 @@
                                 <span>Salud para los mexicanos</span>
                             </a>
                         </li>
-                       
+
                     </ul>
                 </div>
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
@@ -64,41 +65,96 @@
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
                     <i class="bi bi-justify fs-3"></i>
-                    
+
                 </a>
             </header>
             <div class="page-heading">
                 <h1>Bienvenido</h1>
-                <div class = "pane-content">
-                    <div class="row">
-                    <div class="col-md-12 text-left" >
-                        <h2>Información, trámites y servicios para:</h2>
+                <div class="pane-content">
+                    <div class="">
                         <hr class="red">
-                        </hr>
-                    </div> 
-                    <div class="row">
-                        <div class="col-md-2 text-center">
-                            <a href="">
-                                <img  src="./assets/images/inicio/derechoh.jpg" width="150" height="268" border="">
-                                <span class="label-tramites">Derechohabientes, pensionados y público en general</span>
-                            </a>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <a href="">
-                                <img  src="./assets/images/inicio/patrones.jpg" width="180" height="268" border="">
-                                <span class="label-tramites"> Patrones o Empresas</span>
-                            </a>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <a href="">
-                                <img  src="./assets/images/inicio/profsalud.jpg" width="180" height="268" border="">
-                                <span class="label-tramites"> Profesionales de la salud</span>
-                            </a>
+                        <h1>Selecciona un hospital</h1>
+                        <div class="row">
+                            <select class="form-control" id="hospitalSelect">
+                                <option>Seleccione</option>
+                                <option value="">HOSPITAL GENERAL DE TEZIUTLAN</option>
+                                <option value="">HOSPITAL DE LA MUJER</option>
+                                <option value="">HOSPITAL NIÑO POBLANO</option>
+                                <option value="">HOSPITAL DE ESPECIALIDADES SAN JOSE</option>
+                                <option value="">CLINICA MI RUFI</option>
+                                <option value="">HOSPITAL GENERAL DE MEXICO</option>
+                            </select>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12 text-left">
+                            <h2>Información, trámites y servicios para:</h2>
+                            <hr class="red">
+                            </hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <a href="">
+                                    <img style="border-radius: 10px;" src="./assets/images/inicio/derechoh.jpg"
+                                        width="150" height="268" border="">
+                                    <div><span class="label-tramites">Derechohabientes, pensionados y público en
+                                            general</span></div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="">
+                                    <img style="border-radius: 10px;" src="./assets/images/inicio/patrones.jpg"
+                                        width="200" height="268" border="">
+                                    <div><span class="label-patrones"> Patrones o Empresas</span></div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="">
+                                    <img style="border-radius: 10px;" src="./assets/images/inicio/profsalud.jpg"
+                                        width="180" height="268" border="">
+                                    <div><span class="label-profesionales"> Profesionales de la salud</span></div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <a href="">
+                                    <img style="border-radius: 10px;" src="./assets/images/inicio/salud.jpg" width="200"
+                                        height="268" border="">
+                                    <div> <span class="label-salud"> Salud en linea</span></div>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>Accesos directos</h2>
+                                    <hr class="red">
+                                    <div class="row text-center">
+                                        <div class="col-md-4">
+                                            <a href="" class=''>
+                                                <img src="https://www.imss.gob.mx/sites/all/statics/iconos/1.png" alt="">
+                                                <div><span>SPM digital</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="" class=''>
+                                                <img src="https://www.imss.gob.mx/sites/all/statics/iconos/6.png" alt="">
+                                                <div><span>Personas trabajadoras independientes</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="" class=''>
+                                                <img src="https://www.imss.gob.mx/sites/all/statics/iconos/7.png" alt="">
+                                                <div><span>Personas trabajadoras independientes</span></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+            </div>
         </div>
+    </div>
     </div>
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
